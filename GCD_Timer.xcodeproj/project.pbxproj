@@ -14,6 +14,7 @@
 		C59BE31F25592688001D3F64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C59BE31E25592688001D3F64 /* Assets.xcassets */; };
 		C59BE32225592688001D3F64 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C59BE32025592688001D3F64 /* LaunchScreen.storyboard */; };
 		C59BE32525592688001D3F64 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C59BE32425592688001D3F64 /* main.m */; };
+		C59BE32F25592B9B001D3F64 /* CLCountButton.m in Sources */ = {isa = PBXBuildFile; fileRef = C59BE32E25592B9B001D3F64 /* CLCountButton.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,8 @@
 		C59BE32125592688001D3F64 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C59BE32325592688001D3F64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C59BE32425592688001D3F64 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C59BE32D25592B9B001D3F64 /* CLCountButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CLCountButton.h; sourceTree = "<group>"; };
+		C59BE32E25592B9B001D3F64 /* CLCountButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CLCountButton.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +70,8 @@
 				C59BE31625592686001D3F64 /* SceneDelegate.m */,
 				C59BE31825592686001D3F64 /* ViewController.h */,
 				C59BE31925592686001D3F64 /* ViewController.m */,
+				C59BE32D25592B9B001D3F64 /* CLCountButton.h */,
+				C59BE32E25592B9B001D3F64 /* CLCountButton.m */,
 				C59BE31B25592686001D3F64 /* Main.storyboard */,
 				C59BE31E25592688001D3F64 /* Assets.xcassets */,
 				C59BE32025592688001D3F64 /* LaunchScreen.storyboard */,
@@ -148,6 +153,7 @@
 				C59BE31A25592686001D3F64 /* ViewController.m in Sources */,
 				C59BE31425592686001D3F64 /* AppDelegate.m in Sources */,
 				C59BE32525592688001D3F64 /* main.m in Sources */,
+				C59BE32F25592B9B001D3F64 /* CLCountButton.m in Sources */,
 				C59BE31725592686001D3F64 /* SceneDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
