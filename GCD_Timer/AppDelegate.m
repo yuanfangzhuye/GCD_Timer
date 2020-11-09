@@ -6,6 +6,7 @@
 //
 
 #import "AppDelegate.h"
+#import <AVFoundation/AVFoundation.h>
 
 @interface AppDelegate ()
 
@@ -16,7 +17,32 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    [[AVAudioSession sharedInstance] setCategory: AVAudioSessionCategoryPlayback error: NULL];
+    [[AVAudioSession sharedInstance] setActive: YES error: NULL];
+    
     return YES;
+}
+
+
+- (void)applicationDidEnterBackground:(UIApplication *)application {
+    UIApplication *taskApplication = [UIApplication sharedApplication];
+    __block UIBackgroundTaskIdentifier backgroundTask;
+    backgroundTask = [taskApplication beginBackgroundTaskWithExpirationHandler:^{
+        dispatch_async(dispatch_get_main_queue(), ^{
+            if (backgroundTask != UIBackgroundTaskInvalid) {
+                backgroundTask = UIBackgroundTaskInvalid;
+            }
+        });
+    }];
+    
+    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+        dispatch_async(dispatch_get_main_queue(), ^{
+            if (backgroundTask != UIBackgroundTaskInvalid) {
+                backgroundTask = UIBackgroundTaskInvalid;
+            }
+        });
+    });
 }
 
 
